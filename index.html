@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Календарь аренды</title>
+  <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/main.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/main.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/multimonth@6.1.8/main.min.css" rel="stylesheet">
+  <link href="./src/styles/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="controls">
+    <button id="zoom-1">1 месяц</button>
+    <button id="zoom-6">6 месяцев</button>
+    <button id="zoom-12">12 месяцев</button>
+  </div>
+
+  <div id="calendar"></div>
+
+  <div class="finance">
+    <h2>Финансы</h2>
+    <div class="charts">
+      <canvas id="incomeChart"></canvas>
+      <canvas id="expensesChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Скрипты FullCalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/multimonth@6.1.8/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Webpack Bundle -->
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>

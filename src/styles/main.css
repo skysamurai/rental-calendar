@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#calendar {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.finance {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+}
